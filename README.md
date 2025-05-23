@@ -33,6 +33,8 @@ model = SpeechRecognitionModel("jonatasgrosman/wav2vec2-large-xlsr-53-english")
 audio_paths = ["C:/Users/rabah/Documents/notebooks/technique/application_accent/audio_outputs/6eab0feea2f94c3e938dbe360c013033.wav"]
 
 transcriptions = model.transcribe(audio_paths)
+```
+
 This transcription result can then be passed to an LLM agent to interpret the speaker's accent and generate a human-readable explanation and confidence score.
 
 ✅ Current Status
@@ -41,15 +43,6 @@ The agent structure and frontend UI are operational using Streamlit.
 Audio extraction from public video links is working.
 
 Accent classification and explanation agents are designed but not fully integrated due to time constraints.
-
-📌 Note
-This submission demonstrates:
-
-Mastery of modular agent structure using LangChain.
-
-Clear planning for audio and language processing pipelines.
-
-Ability to expand and integrate ML/LLM components with more time.
 
 🚀 Run Locally:
 git clone https://github.com/ranimrabah/accent_detection.git
